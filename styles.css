@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+    color: hsl(179, 62%, 43%);
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#top-container>h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.headers {
+    font-weight: 700;
+}
+
+#main-content {
+    width: 35vw;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 15%);
+}
+
+#top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 30px;
+    height: 45%;
+    width: 100%;
+    justify-content: center;
+}
+
+#top-container>p {
+    color: hsl(218, 22%, 67%);
+}
+
+#bottom-container {
+    display: flex;
+    width: 100%;
+    height: 55%;
+}
+
+#left-container,
+#right-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 30px;
+    justify-content: center;
+    color: hsl(204, 43%, 93%);
+}
+
+#left-container {
+    background-color: #2BB4B1;
+    border-radius: 0 0 0 10px;
+}
+
+#right-container {
+    background-color: #49BEBD;
+    border-radius: 0 0 10px 0;
+}
+
+button {
+    height: 40px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-family: 'Karla', sans-serif;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 15%);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#dollar-text {
+    font-size: 26px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 426px) {
+
+    #main-content {
+        width: 75vw;
+        height: 95vh;
+        border-radius: 5px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #top-container {
+        height: 34%;
+        gap: 7px;
+    }
+
+    #bottom-container {
+        display: flex;
+        flex-direction: column;
+        height: 66%;
+    }
+
+    #left-container,
+    #right-container {
+        width: 100%;
+
+    }
+
+    #left-container {
+        border-radius: 0 0 0 0;
+    }
+
+    #right-container {
+        border-radius: 0 0 5px 5px;
+    }
+}
